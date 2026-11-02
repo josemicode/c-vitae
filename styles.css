@@ -550,9 +550,34 @@ section p:last-child {
 
     .eyebrow,
     .section-nav,
-    .scroll-btn,
-    .social-links {
+    .scroll-btn {
         display: none !important;
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8pt;
+        margin-top: 6pt;
+    }
+
+    .social-btn {
+        min-height: 0;
+        padding: 0;
+        border: 0;
+        background: none;
+        font-size: 9.5pt;
+    }
+
+    .social-btn svg {
+        display: none;
+    }
+
+    .social-btn::after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        font-weight: 400;
+        overflow-wrap: anywhere;
     }
 
     h1 {
