@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const printButton = document.getElementById("print-cv");
     const header = document.querySelector("header");
 
+    // Compatibility
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const stackedLayout = window.matchMedia("(max-width: 768px)");
 
